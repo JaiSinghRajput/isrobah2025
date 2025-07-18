@@ -20,7 +20,10 @@ const Formparameter = ({ formData, setFormData, handleSubmit }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-fit gap-2 items-center flex  mx-auto bg-white p-6 rounded-xl shadow-lg space-y-4"
+      className="max-w-fit gap-2 items-center
+       flex-col md:flex-row flex 
+        mx-auto bg-white p-6 justify-center 
+        rounded-xl shadow-lg space-y-4"
     >
       <div>
         <label className="block mb-1 font-semibold">Select Parameter</label>
