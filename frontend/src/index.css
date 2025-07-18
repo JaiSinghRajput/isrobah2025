@@ -1,0 +1,132 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Space-themed design system with cosmic colors and gradients */
+
+@layer base {
+  :root {
+    --background: 220 30% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 25 95% 55%;
+    --primary-foreground: 220 30% 7%;
+
+    --secondary: 215 25% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 215 20% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 200 90% 60%;
+    --accent-foreground: 220 30% 7%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 15%;
+    --ring: 25 95% 55%;
+
+    --radius: 0.5rem;
+
+    /* Space theme specific colors */
+    --cosmic-blue: 220 100% 50%;
+    --solar-orange: 25 95% 55%;
+    --stellar-purple: 260 100% 70%;
+    --nebula-pink: 320 100% 70%;
+    --deep-space: 220 30% 7%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(135deg, hsl(var(--deep-space)) 0%, hsl(220 25% 10%) 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .cosmic-gradient {
+    background: linear-gradient(135deg, 
+      hsl(var(--cosmic-blue)) 0%, 
+      hsl(var(--stellar-purple)) 50%, 
+      hsl(var(--nebula-pink)) 100%);
+  }
+  
+  .solar-gradient {
+    background: linear-gradient(135deg, 
+      hsl(var(--solar-orange)) 0%, 
+      hsl(30 100% 60%) 100%);
+  }
+  
+  .space-card {
+    @apply bg-card/50 backdrop-blur-md border border-border/50 rounded-lg;
+    background: linear-gradient(135deg, 
+      hsl(var(--card)) 0%, 
+      hsl(215 20% 12%) 100%);
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 20px hsl(var(--accent) / 0.3);
+  }
+
+  .text-cosmic {
+    background: linear-gradient(135deg, hsl(var(--cosmic-blue)), hsl(var(--stellar-purple)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-solar {
+    background: linear-gradient(135deg, hsl(var(--solar-orange)), hsl(30 100% 60%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px hsl(var(--accent) / 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px hsl(var(--accent) / 0.8);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-slow-rotate {
+  animation: rotate 20s linear infinite;
+}
