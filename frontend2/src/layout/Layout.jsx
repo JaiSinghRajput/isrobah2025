@@ -14,7 +14,7 @@ export default function Page() {
           </div>
           <div className="lg:text-3xl text-sm sm:text-xl md:text-2xl tracking-widest font-bold">
             <h1>Bharat Solar Sentinel</h1>
-            <h1 className="text-base">-CME Identifier in SWIS Instrument</h1>
+            <h1 className="text-sm">-CME Identifier in SWIS Instrument</h1>
           </div>
           <div className="p-2 rounded">
             <img className="h-auto w-46" src={logo2} alt="" />
