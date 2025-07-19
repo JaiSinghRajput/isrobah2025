@@ -388,11 +388,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For questions, issues, or contributions:
-- **Issues**: [GitHub Issues](https://github.com/Karann1101/Identifying-HALO-CME-Events-based-on-Particle-Data/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Karann1101/Identifying-HALO-CME-Events-based-on-Particle-Data/discussions)
-- **Email**: [Your Email]
-
+- **Email**: [jaisinghmitrc@gmail.com]
 ---
 
-**Built with ❤️ for space weather research and early warning systems**#   A d i t y a _ L 1  
+**Built with ❤️ for space weather research and early warning systems**#   A d i t y a _ L 1 
+ 
  
